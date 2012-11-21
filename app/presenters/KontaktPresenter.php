@@ -1,8 +1,15 @@
 <?php
 use Nette\Forms\Form;
+use Blog\Controls\GoogleMap;
 
 class KontaktPresenter extends BasePresenter
 {
+    public function createComponentGMap(){
+        $googleMap = new GoogleMap();
+        $googleMap->setTitle("Tu sa nachádzame...");
+        return $googleMap;
+    }
+
     public function createComponentContactForm(){
         $form = new \Nette\Application\UI\Form();
         $form->addText('name', 'Meno a priezvisko:');

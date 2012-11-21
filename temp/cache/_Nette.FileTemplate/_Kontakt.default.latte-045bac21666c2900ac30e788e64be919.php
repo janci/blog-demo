@@ -1,17 +1,26 @@
-<?php //netteCache[01]000381a:2:{s:4:"time";s:21:"0.84490700 1353522974";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:59:"/home/weby/blog/sandbox/app/templates/Kontakt/default.latte";i:2;i:1353522968;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"6a33aa6 released on 2012-10-01";}}}?><?php
+<?php //netteCache[01]000381a:2:{s:4:"time";s:21:"0.61563500 1353524088";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:59:"/home/weby/blog/sandbox/app/templates/Kontakt/default.latte";i:2;i:1353524080;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"6a33aa6 released on 2012-10-01";}}}?><?php
 
 // source file: /home/weby/blog/sandbox/app/templates/Kontakt/default.latte
 
 ?><?php
 // prolog Nette\Latte\Macros\CoreMacros
-list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, '5t7r45yzwd')
+list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, '28czd0v00z')
 ;
 // prolog Nette\Latte\Macros\UIMacros
 //
 // block content
 //
-if (!function_exists($_l->blocks['content'][] = '_lb9cb356e918_content')) { function _lb9cb356e918_content($_l, $_args) { extract($_args)
-;$_ctrl = $_control->getComponent("contactForm"); if ($_ctrl instanceof Nette\Application\UI\IRenderable) $_ctrl->validateControl(); $_ctrl->render() ;
+if (!function_exists($_l->blocks['content'][] = '_lb9026840036_content')) { function _lb9026840036_content($_l, $_args) { extract($_args)
+?><div class="mycontact">
+    Meno a priezvisko: John Doe
+    Adresa: Bočková 33
+    Mesto: Košice
+    PSČ: 040 01
+</div>
+
+<?php $_ctrl = $_control->getComponent("gMap"); if ($_ctrl instanceof Nette\Application\UI\IRenderable) $_ctrl->validateControl(); $_ctrl->render() ?>
+
+<?php $_ctrl = $_control->getComponent("contactForm"); if ($_ctrl instanceof Nette\Application\UI\IRenderable) $_ctrl->validateControl(); $_ctrl->render() ;
 }}
 
 //
