@@ -10,7 +10,7 @@ class GoogleMap extends \Nette\Application\UI\Control
         $this->googleLink->addStyle('color','#0000FF');
         $this->googleLink->addStyle('text-align', 'left');
         $this->googleLink->setText('View Larger Map');
-        //https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Brezno,+Slovakia&amp;aq=0&amp;oq=Brezno&amp;sll=37.0625,-95.677068&amp;sspn=40.732051,56.513672&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Brezno,+Slovakia&amp;ll=48.813138,19.643555&amp;spn=0.019782,0.036478&amp;z=14&amp;iwloc=A
+        $this->googleLink->href = 'https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Brezno,+Slovakia&amp;aq=0&amp;oq=Brezno&amp;sll=37.0625,-95.677068&amp;sspn=40.732051,56.513672&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=Brezno,+Slovakia&amp;ll=48.813138,19.643555&amp;spn=0.019782,0.036478&amp;z=14&amp;iwloc=A';
     }
 
     public function getGoogleExternalLink() {
@@ -27,7 +27,6 @@ class GoogleMap extends \Nette\Application\UI\Control
     }
 
     public function render($param=null){
-        $
         /* @var $template \Nette\Templating\FileTemplate */
         $template = $this->getTemplate();
         $template->externalLink = $this->googleLink;
