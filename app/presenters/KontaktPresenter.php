@@ -7,6 +7,8 @@ class KontaktPresenter extends BasePresenter
     public function createComponentGMap(){
         $googleMap = new GoogleMap();
         $googleMap->setTitle("Tu sa nachádzame...");
+        //$googleMap->setLargeMapDescription("Zobraziť na google maps.");
+        $googleMap->getGoogleExternalLink();
         return $googleMap;
     }
 
