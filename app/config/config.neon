@@ -16,15 +16,16 @@ common:
 			errorPresenter: Error
 
 		database:
-			dsn: 'mysql:host=localhost;dbname=test'
-			user:
-			password:
+			dsn: 'mysql:host=localhost;dbname=blog'
+			user: blog
+			password: F2S6ZqT3beY4CyFE
 
 		session:
 			expiration: 14 days
 
 
 	services:
+		articles: ArticleRepository
 		authenticator: Authenticator
 
 
