@@ -34,10 +34,8 @@ class ClankyPresenter extends BasePresenter
 
 
     public function renderDefault(){
-        $this->template->articles = $this->articleRepository->getArticles()->fetchPairs('id');//->page($this->page, 3);
-
+        $this->template->articles = $this->articleRepository->getArticles();//->fetchPairs('id');//->page($this->page, 3);
         //dump( $this->articleRepository->getTestResult()->fetchPairs('id') );
-        $this->terminate();
     }
 
 }

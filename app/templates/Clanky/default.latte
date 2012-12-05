@@ -1,6 +1,11 @@
-{foreach $articles as $article}
-    {$article->title} {ifset $article->author}[{$article->author->name}]{/ifset} <a href="{link updateArticle! id=>$article->id}">Aktualizovať</a><br />
-{/foreach}
+{block #content}
 
+
+{foreach $articles as $article}
+    {var $author = $article->author}
+    {$article->title} {if $author}[{$author->name}]{/if} <a href="{link updateArticle! id=>$article->id}">Aktualizovať</a><br />
+{/foreach}
+                {*
 {for $i=0; $i<10; $i++}<a href="{link this page=>$i}">[{$i}]</a> {/for}
 <a href="{link addArticle!}">Pridaj nový článok</a>
+*}
