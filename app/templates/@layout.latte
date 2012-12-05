@@ -30,7 +30,14 @@
 	<div n:foreach="$flashes as $flash" class="flash {$flash->type}">{$flash->message}</div>
     <div id="wrapper">
         <div id="bannerup" class="banner"></div>
-        <div id="menuup" class="menu"></div>
+        <div id="menuup" class="menu">
+            <ul id="menuin">
+                <li><a href="{link Homepage:default}">Úvod</a></li>
+                <li><a href="{link Clanky:default}">Blog</a></li>
+                <li><a href="{link Kontakt:default}">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
 
 	    {include #content}
 	</div>

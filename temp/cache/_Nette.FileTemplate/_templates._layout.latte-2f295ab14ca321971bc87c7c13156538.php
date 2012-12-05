@@ -1,23 +1,23 @@
-<?php //netteCache[01]000373a:2:{s:4:"time";s:21:"0.89798300 1354733331";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:51:"/home/weby/blog/sandbox/app/templates/@layout.latte";i:2;i:1354733270;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"6a33aa6 released on 2012-10-01";}}}?><?php
+<?php //netteCache[01]000373a:2:{s:4:"time";s:21:"0.64314300 1354735417";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:51:"/home/weby/blog/sandbox/app/templates/@layout.latte";i:2;i:1354735415;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"6a33aa6 released on 2012-10-01";}}}?><?php
 
 // source file: /home/weby/blog/sandbox/app/templates/@layout.latte
 
 ?><?php
 // prolog Nette\Latte\Macros\CoreMacros
-list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, 'l1y7alm5ld')
+list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, 'yz7mj9id16')
 ;
 // prolog Nette\Latte\Macros\UIMacros
 //
 // block title
 //
-if (!function_exists($_l->blocks['title'][] = '_lb7b69bbe60e_title')) { function _lb7b69bbe60e_title($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['title'][] = '_lb29ff60ba2d_title')) { function _lb29ff60ba2d_title($_l, $_args) { extract($_args)
 ?>Nette Application Skeleton<?php
 }}
 
 //
 // block head
 //
-if (!function_exists($_l->blocks['head'][] = '_lb169d61330d_head')) { function _lb169d61330d_head($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['head'][] = '_lb380c60dd86_head')) { function _lb380c60dd86_head($_l, $_args) { extract($_args)
 ;
 }}
 
@@ -70,7 +70,14 @@ ob_start(); call_user_func(reset($_l->blocks['title']), $_l, get_defined_vars())
 <?php $iterations++; endforeach ?>
     <div id="wrapper">
         <div id="bannerup" class="banner"></div>
-        <div id="menuup" class="menu"></div>
+        <div id="menuup" class="menu">
+            <ul id="menuin">
+                <li><a href="<?php echo htmlSpecialChars($_control->link("Homepage:default")) ?>">Úvod</a></li>
+                <li><a href="<?php echo htmlSpecialChars($_control->link("Clanky:default")) ?>">Blog</a></li>
+                <li><a href="<?php echo htmlSpecialChars($_control->link("Kontakt:default")) ?>">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
 
 <?php Nette\Latte\Macros\UIMacros::callBlock($_l, 'content', $template->getParameters()) ?>
 	</div>

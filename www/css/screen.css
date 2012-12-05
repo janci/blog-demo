@@ -37,6 +37,9 @@ a[href^="error:"] {
 	color: white;
 }
 
+.clear {
+    clear: both;
+}
 
 div#wrapper {
     width: 900px;
@@ -52,3 +55,54 @@ div#bannerup {
     height: 200px;
     background-image: url("../images/baner.jpg");
 }
+
+div#menuup {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dashed #ccc;
+    border-top: 1px dashed #ccc;
+}
+
+div#menuup li {
+    padding: 0px 20px 0px 20px;
+    margin-top: 5px;
+    float: left;
+    line-height: 20px;
+    list-style: none;
+    text-align: center;
+    border-left: 1px solid #ccc;
+    display: inline-block;
+}
+
+div#menuup ul {
+    margin: 0px;
+    padding-left: 0px;
+    height: 30px;
+    display: block;
+}
+
+div#menuup a {
+    color: #333;
+    text-decoration: none;
+}
+
+div#menuup li:hover {
+    text-decoration: underline;
+}
+
+div#menuup li:first-child {
+    border-left: none;
+}
+
+
+
+
+
+
+
+
+
+
+
