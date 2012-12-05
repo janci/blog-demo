@@ -1,23 +1,23 @@
-<?php //netteCache[01]000373a:2:{s:4:"time";s:21:"0.64314300 1354735417";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:51:"/home/weby/blog/sandbox/app/templates/@layout.latte";i:2;i:1354735415;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"6a33aa6 released on 2012-10-01";}}}?><?php
+<?php //netteCache[01]000373a:2:{s:4:"time";s:21:"0.35226900 1354736612";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:51:"/home/weby/blog/sandbox/app/templates/@layout.latte";i:2;i:1354736603;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"6a33aa6 released on 2012-10-01";}}}?><?php
 
 // source file: /home/weby/blog/sandbox/app/templates/@layout.latte
 
 ?><?php
 // prolog Nette\Latte\Macros\CoreMacros
-list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, 'yz7mj9id16')
+list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, '5oks29i1t1')
 ;
 // prolog Nette\Latte\Macros\UIMacros
 //
 // block title
 //
-if (!function_exists($_l->blocks['title'][] = '_lb29ff60ba2d_title')) { function _lb29ff60ba2d_title($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['title'][] = '_lba7e3bbc8f7_title')) { function _lba7e3bbc8f7_title($_l, $_args) { extract($_args)
 ?>Nette Application Skeleton<?php
 }}
 
 //
 // block head
 //
-if (!function_exists($_l->blocks['head'][] = '_lb380c60dd86_head')) { function _lb380c60dd86_head($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['head'][] = '_lb7657c5a7f4_head')) { function _lb7657c5a7f4_head($_l, $_args) { extract($_args)
 ;
 }}
 
@@ -81,5 +81,6 @@ ob_start(); call_user_func(reset($_l->blocks['title']), $_l, get_defined_vars())
 
 <?php Nette\Latte\Macros\UIMacros::callBlock($_l, 'content', $template->getParameters()) ?>
 	</div>
+	<div id="copyright">&copy; 2012, John Doe</div>
 </body>
 </html>

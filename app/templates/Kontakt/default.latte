@@ -1,12 +1,25 @@
 {block #content}
-
-<div class="mycontact">
-    Meno a priezvisko: John Doe
-    Adresa: Bočková 33
-    Mesto: Košice
-    PSČ: 040 01
+<h1>Kontakt</h1>
+<div class="breadcrumb">
+    <a href="{link Homepage:default}">Úvod</a> &raquo; <a class="current">Kontakt</a>
 </div>
 
-{control gMap}
+<div class="mycontact">
+    <h2>Adresa</h2>
+    <div class="data">
+        JohnDoe <br />
+        Bočková 33 <br />
+        Košice <br />
+        040 01 <br />
+    </div>
+    <div class="contact-1">
+        {control contactForm}
+    </div>
+</div>
 
-{control contactForm}
+<div class="gmap-1">
+{control gMap}
+</div>
+
+
+<br clear="all" />

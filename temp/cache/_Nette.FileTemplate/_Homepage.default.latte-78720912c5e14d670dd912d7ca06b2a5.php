@@ -1,16 +1,32 @@
-<?php //netteCache[01]000382a:2:{s:4:"time";s:21:"0.96579800 1353522260";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:60:"/home/weby/blog/sandbox/app/templates/Homepage/default.latte";i:2;i:1349125320;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"6a33aa6 released on 2012-10-01";}}}?><?php
+<?php //netteCache[01]000382a:2:{s:4:"time";s:21:"0.70229800 1354736166";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:60:"/home/weby/blog/sandbox/app/templates/Homepage/default.latte";i:2;i:1354736158;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"6a33aa6 released on 2012-10-01";}}}?><?php
 
 // source file: /home/weby/blog/sandbox/app/templates/Homepage/default.latte
 
 ?><?php
 // prolog Nette\Latte\Macros\CoreMacros
-list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, 'w0concymcq')
+list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, 'mrepg26j6v')
 ;
 // prolog Nette\Latte\Macros\UIMacros
 //
 // block content
 //
-if (!function_exists($_l->blocks['content'][] = '_lb614e4bbec0_content')) { function _lb614e4bbec0_content($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['content'][] = '_lbfbd19610b9_content')) { function _lbfbd19610b9_content($_l, $_args) { extract($_args)
+?><p>
+    Vestibulum interdum enim non libero suscipit ultrices. Pellentesque feugiat iaculis augue quis dictum. Pellentesque sodales sodales tortor nec fringilla. Morbi porttitor sagittis erat, eu dictum nibh pulvinar id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel neque porttitor nisi blandit tincidunt sed sit amet ipsum. Vivamus dignissim fermentum faucibus.
+</p>
+<p>
+    Etiam at vehicula libero. Integer vitae ante eu erat adipiscing fermentum in nec ante. Sed justo risus, dapibus et luctus vitae, aliquet nec odio. Etiam ut velit metus. Cras consequat est in ipsum iaculis lobortis in ut sem. Vestibulum vel consequat urna. Donec semper rhoncus erat, vitae dapibus ante tempor sed. Sed volutpat interdum malesuada. In accumsan pharetra lacus ac venenatis. Fusce sed nunc sit amet ligula iaculis sollicitudin. Nunc et augue turpis, a aliquet lectus. Nam egestas porta turpis, bibendum tristique diam fringilla id. Praesent sollicitudin sapien placerat metus tristique in blandit massa dignissim.
+</p>
+<p>
+    Cras nec leo eget tellus blandit scelerisque non vel nulla. Donec sed mi sit amet mauris iaculis eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a sem a nisl molestie consectetur. In dui leo, eleifend ac varius vel, fermentum vitae nulla. Nam viverra odio eu ante vestibulum aliquam. Sed purus arcu, ultricies a consequat vel, placerat iaculis mauris. Phasellus nec elit eget mi malesuada dapibus a id lorem.
+</p>
+<?php
+}}
+
+//
+// block content2
+//
+if (!function_exists($_l->blocks['content2'][] = '_lb1b3932ca49_content2')) { function _lb1b3932ca49_content2($_l, $_args) { extract($_args)
 ?><div id="banner">
 <?php call_user_func(reset($_l->blocks['title']), $_l, get_defined_vars())  ?>
 </div>
@@ -78,15 +94,15 @@ if (!function_exists($_l->blocks['content'][] = '_lb614e4bbec0_content')) { func
 //
 // block title
 //
-if (!function_exists($_l->blocks['title'][] = '_lb3d442dd904_title')) { function _lb3d442dd904_title($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['title'][] = '_lb7d9d983a76_title')) { function _lb7d9d983a76_title($_l, $_args) { extract($_args)
 ?>	<h1>Congratulations!</h1>
 <?php
 }}
 
 //
-// block head
+// block head2
 //
-if (!function_exists($_l->blocks['head'][] = '_lbac4ca48464_head')) { function _lbac4ca48464_head($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['head2'][] = '_lb9936c63803_head2')) { function _lb9936c63803_head2($_l, $_args) { extract($_args)
 ?><style>
 html { overflow-y: scroll; }
 body { font: 14px/1.65 Verdana, "Geneva CE", lucida, sans-serif; background: #3484d2; color: #333; margin: 38px auto; max-width: 940px; min-width: 770px; }
@@ -163,5 +179,7 @@ if ($_l->extends) {
 if ($_l->extends) { ob_end_clean(); return Nette\Latte\Macros\CoreMacros::includeTemplate($_l->extends, get_defined_vars(), $template)->render(); }
 call_user_func(reset($_l->blocks['content']), $_l, get_defined_vars())  ?>
 
+<?php call_user_func(reset($_l->blocks['content2']), $_l, get_defined_vars())  ?>
 
-<?php call_user_func(reset($_l->blocks['head']), $_l, get_defined_vars()) ; 
+
+<?php call_user_func(reset($_l->blocks['head2']), $_l, get_defined_vars()) ; 
