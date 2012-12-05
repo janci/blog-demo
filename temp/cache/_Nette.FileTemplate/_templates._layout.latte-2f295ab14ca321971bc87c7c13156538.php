@@ -1,23 +1,23 @@
-<?php //netteCache[01]000373a:2:{s:4:"time";s:21:"0.99574200 1353522260";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:51:"/home/weby/blog/sandbox/app/templates/@layout.latte";i:2;i:1349125320;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"6a33aa6 released on 2012-10-01";}}}?><?php
+<?php //netteCache[01]000373a:2:{s:4:"time";s:21:"0.89798300 1354733331";s:9:"callbacks";a:2:{i:0;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:9:"checkFile";}i:1;s:51:"/home/weby/blog/sandbox/app/templates/@layout.latte";i:2;i:1354733270;}i:1;a:3:{i:0;a:2:{i:0;s:19:"Nette\Caching\Cache";i:1;s:10:"checkConst";}i:1;s:25:"Nette\Framework::REVISION";i:2;s:30:"6a33aa6 released on 2012-10-01";}}}?><?php
 
 // source file: /home/weby/blog/sandbox/app/templates/@layout.latte
 
 ?><?php
 // prolog Nette\Latte\Macros\CoreMacros
-list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, '3taprqnrdc')
+list($_l, $_g) = Nette\Latte\Macros\CoreMacros::initRuntime($template, 'l1y7alm5ld')
 ;
 // prolog Nette\Latte\Macros\UIMacros
 //
 // block title
 //
-if (!function_exists($_l->blocks['title'][] = '_lb0341989c03_title')) { function _lb0341989c03_title($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['title'][] = '_lb7b69bbe60e_title')) { function _lb7b69bbe60e_title($_l, $_args) { extract($_args)
 ?>Nette Application Skeleton<?php
 }}
 
 //
 // block head
 //
-if (!function_exists($_l->blocks['head'][] = '_lbf7c5569037_head')) { function _lbf7c5569037_head($_l, $_args) { extract($_args)
+if (!function_exists($_l->blocks['head'][] = '_lb169d61330d_head')) { function _lb169d61330d_head($_l, $_args) { extract($_args)
 ;
 }}
 
@@ -68,7 +68,11 @@ ob_start(); call_user_func(reset($_l->blocks['title']), $_l, get_defined_vars())
 <?php $iterations = 0; foreach ($flashes as $flash): ?>	<div class="flash <?php echo htmlSpecialChars($flash->type) ?>
 "><?php echo Nette\Templating\Helpers::escapeHtml($flash->message, ENT_NOQUOTES) ?></div>
 <?php $iterations++; endforeach ?>
+    <div id="wrapper">
+        <div id="bannerup" class="banner"></div>
+        <div id="menuup" class="menu"></div>
 
 <?php Nette\Latte\Macros\UIMacros::callBlock($_l, 'content', $template->getParameters()) ?>
+	</div>
 </body>
 </html>
